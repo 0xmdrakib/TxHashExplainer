@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const APP_URL = "https://your-app-url.com";
-const BASE_APP_ID = "REPLACE_BASE_APP_ID";
+const APP_URL = "https://tx-hash-explainer.vercel.app/";
+const BASE_APP_ID = "6945e035d77c069a945be1e2";
 
 export const metadata: Metadata = {
   title: "Tx Hash Explainer",
