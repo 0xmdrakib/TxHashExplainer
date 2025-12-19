@@ -18,7 +18,7 @@
     "heroImageUrl": "https://tx-hash-explainer.vercel.app/hero.png",
     "tagline": "Explain Base transactions fast",
     "ogTitle": "Tx Hash Explainer",
-    "ogDescription": "Paste a tx hash to get a clean from/to/value/fee summary (Base).",
+    "ogDescription": "Paste a tx hash to get a clean from, to, value, fee, summary (Base).",
     "ogImageUrl": "https://tx-hash-explainer.vercel.app/hero.png",
     "noindex": true
   }
