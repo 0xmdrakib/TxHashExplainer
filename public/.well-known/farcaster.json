@@ -10,7 +10,7 @@
     "homeUrl": "https://tx-hash-explainer.vercel.app/",
     "iconUrl": "https://tx-hash-explainer.vercel.app/icon.png",
     "splashImageUrl": "https://tx-hash-explainer.vercel.app/splash.png",
-    "splashBackgroundColor": "#ff0000",
+    "splashBackgroundColor": "#FF0000",
     "subtitle": "Receipt style tx report",
     "description": "Paste a Base tx hash and get a clean receipt style explanation.",
     "primaryCategory": "utility",
