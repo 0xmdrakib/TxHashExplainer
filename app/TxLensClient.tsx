@@ -152,24 +152,10 @@ export default function TxLensClient() {
   }
 
   async function share() {
-    const h = (data?.hash ?? hash).trim();
-    if (!isTxHash(h)) {
-      setToast("Add a valid hash first.");
-      return;
-    }
-
-    const text = [
-      "Tx Hash Explainer (Base)",
-      status.label.toUpperCase(),
-      `Value: ${data ? fmtEth(data.valueEth) : "—"} ETH`,
-      `From: ${data ? shortAddr(data.from) : "—"}`,
-      `To: ${data ? (data.to ? shortAddr(data.to) : "contract creation") : "—"}`,
-      data?.feeEth ? `Fee: ${fmtEth(data.feeEth)} ETH` : null,
-      "",
-      shareUrl,
-    ].filter(Boolean).join("\n");
-
-    await sdk.actions.composeCast({ text, embeds: [shareUrl] });
+    await sdk.actions.composeCast({
+      text: "I just used Tx Hash Explainer",
+      embeds: ["https://tx-hash-explainer.vercel.app"],
+    });
   }
 
   async function openExplorer() {
@@ -252,7 +238,7 @@ export default function TxLensClient() {
             <button className="btn" onClick={() => { setHash(""); setData(null); setErr(null); setToast(null); }} disabled={loading}>
               Clear
             </button>
-            <button className="btn" onClick={share} disabled={!data || loading}>
+            <button className="btn" onClick={share} disabled={loading}>
               Share
             </button>
             <button className="btn" onClick={openExplorer} disabled={!baseScanUrl || loading}>
